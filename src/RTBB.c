@@ -91,7 +91,7 @@ int main(int argc, char **argv) {
          printf("%s", USAGE);
          return ERROR;
       }
-      strncpy(name, argv[3], MAX_NAME_LEN-1);
+      strcpy(name, argv[3]);
       printf("%d\n", storeOffice(db, election, name));
       return 0;
    } else if (!strncmp("add-candidate", argv[1], MAX_NAME_LEN)) {
@@ -105,7 +105,7 @@ int main(int argc, char **argv) {
          printf("%s", USAGE);
          return ERROR;
       }
-      strncpy(name, argv[3], MAX_NAME_LEN-1);
+      strcpy(name, argv[3]);
       printf("%d\n", storeCandidate(db, office, name));
    } else if (!strncmp("add-zip", argv[1], MAX_NAME_LEN)) {
       if (argc < 4) {
@@ -134,7 +134,7 @@ int main(int argc, char **argv) {
       char county[MAX_NAME_LEN];
       int zip;
       Date dob;
-      strncpy(name, argv[2], MAX_NAME_LEN-1);
+      strcpy(name, argv[2]);
       strncpy(county, argv[3], MAX_NAME_LEN-1);
       if (sscanf(argv[4], "%d", &zip) != 1) {
          printf("%s", USAGE);

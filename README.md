@@ -7,6 +7,23 @@ It's not very secure by default. This was _not_ written with best practices
 in mind, so in your testing you should see if the base system itself could be
 vulnerable to an attack!
 
+## Setup Environment
+
+1. Turn off certain functions on your virtual machine
+
+- Address Randomization 
+```sh
+$ sudo sysctl -w kernel.randomize_va_space=0
+
+```
+
+- Configuring bin bash
+
+```sh
+$ /bin/bash_shellshock
+```
+
+
 ## Running the Front-End
 
 The front-end interface to the voting machine is a series of CGI

@@ -134,7 +134,7 @@ bool checkZip(sqlite3 *db, _id_t office, int zip) {
    sqlite3_step(stmt);
    count = sqlite3_column_int(stmt, 0);
    sqlite3_finalize(stmt);
-   return count > 0;
+   return count >= 0;
 }
 
 //format string

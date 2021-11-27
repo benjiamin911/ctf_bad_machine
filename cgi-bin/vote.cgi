@@ -43,7 +43,6 @@ try:
         print('</ul>')
     else:
         print('<form method="post">')
-
         print('<label for="voterName">Voter Name</label><br>')
         print('<input type="text" id="voterName" name="voterName"><br>')
         print('<label for="voterId">Voter ID</label><br>')

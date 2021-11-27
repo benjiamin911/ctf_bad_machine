@@ -11,8 +11,6 @@ render_home() {
     echo "<li><a href='./register.cgi'>Register to Vote</a></li>"
     echo "<li><a href='./vote.cgi'>Vote for an Office</a></li>"
     echo "<li><a href='./login.cgi'>Administrator Interface (Requires Login)</a></li>"
-    #echo "<li><a href='./login.cgi'>Administrator Interface (Requires Login)</a></li>"
-    #echo "<li><a href='./tusk.cgi'>TUSK!<a></li>"
     echo "</ul>"
 }
 
